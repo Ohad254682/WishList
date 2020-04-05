@@ -1,0 +1,169 @@
+.container {
+  margin: 0 auto;
+  width: 95%;
+  background-color: rgba(194, 187, 187, 0.384);
+  height: 95vh;
+}
+
+.preview-container > div {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  padding: 10px;
+}
+
+.preview-container h5 {
+  color: rgba(90, 90, 223, 0.651);
+}
+
+.preview-author {
+  color: rgba(44, 133, 44, 0.76);
+}
+
+.preview-description {
+  max-height: 100px;
+  overflow-y: scroll;
+}
+
+.preview-description::-webkit-scrollbar {
+  width: 5px;
+  background: rgba(110, 110, 110, 0.582);
+}
+
+.preview-description::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgba(110, 110, 110, 0.582);
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  border: 0px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.arrow:focus {
+  outline: 0px;
+}
+
+.arrow.right {
+  background-image: url(./assets/forward.png);
+}
+
+.arrow.left {
+  background-image: url(./assets/back.png);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.star-off {
+  background-image: url(./assets/star-off.png);
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.star-on {
+  background-image: url(./assets/star-on.png);
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.preview-checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+.wishlist-item {
+  background: white;
+  padding: 10px;
+  list-style: none;
+  width: 250px;
+  margin-bottom: 10px;
+  height: 50px;
+}
+
+.wishlist-item-decoration {
+  background-color: rgb(209, 139, 8);
+  width: 10px;
+  margin-bottom: 10px;
+}
+
+.wishlist-placeholder {
+  background: transparent;
+  padding: 10px;
+  list-style: none;
+  width: 260px;
+  margin-bottom: 10px;
+  height: 50px;
+}
+
+.book-title {
+  max-width: 20ch;
+}
+
+.remove-book-btn {
+  color: white;
+  background-color: rgba(110, 110, 110, 0.582);
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.total-price {
+  color: rgba(44, 133, 44, 0.76);
+  justify-self: flex-end;
+}
+
+.sorting-btns button {
+  width: 100px;
+  height: 45px;
+  border: none;
+  background-color: white;
+  color: rgba(44, 133, 44, 0.76);
+  margin-right: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.sorting-btns button:active {
+  background-color: rgba(44, 133, 44, 0.76);
+  color: white;
+}
+
+ul{
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+/*HELPERS*/
+
+.flex {
+  display: flex;
+}
+.flex.column {
+  flex-direction: column;
+}
+.flex.justify-center {
+  justify-content: center;
+}
+.flex.align-center {
+  align-items: center;
+}
+.flex.justify-between {
+  justify-content: space-between;
+}
+.flex.justify-around {
+  justify-content: space-around;
+}
